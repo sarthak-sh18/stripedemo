@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Payment</title>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBn_mVxnjJCftLrxr5G67EiZXeKycDZacQ",
+    authDomain: "proj1-43411.firebaseapp.com",
+    databaseURL: "https://proj1-43411.firebaseio.com",
+    projectId: "proj1-43411",
+    storageBucket: "",
+    messagingSenderId: "750999165301"
+  };
+  firebase.initializeApp(config);
+</script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<center>
+<div style="margin-top:200px"> 
+<form action="/pay" method="post">
+
+
+
+
+<script  
+	src="https://checkout.stripe.com/checkout.js" 
+	class="stripe-button" 
+	data-key="pk_test_BsLSPVYMbwjqJVJ4DmMX6g9n" 
+	data-amount="100000" 
+	data-name="Commodity" 
+	data-currency="inr" 
+	data-description="This is the best commodity you can get in the market" 
+	data-locale="auto">
+</script>
+<input type="hidden" name="paidamount" value="100000">
+</form>
+
+</div>
+</center>
+</body>
+</html>
